@@ -8,17 +8,18 @@
 <body>
 <div class="main">
     <h2>Simple form registration</h2>
-    <form action="form.php">
-        <span>Введите ваше имя</span>
-        <input type="text" name="name">
-        <span>Введите вашу фамилию</span>
-        <input type="text" name="surname">
-        <span>Введите ваш e-mail</span>
-        <input type="email" name="email">
-        <span>Введите пароль</span>
-        <input type="password" name="password">
-        <span>Подтверждение пароля</span>
-        <input type="password">
+    <form class="main__form" action="form.php">
+        <span class="main__span">Введите ваше имя</span>
+        <input class="main__input" type="text" name="name">
+        <span class="main__span">Введите вашу фамилию</span>
+        <input class="main__input" type="text" name="surname">
+        <span class="main__span">Введите ваш e-mail</span>
+        <input class="main__input" type="email" name="email">
+        <span class="main__span">Введите пароль</span>
+        <input class="main__input" type="password" name="password">
+        <span class="main__span">Подтверждение пароля</span>
+        <input class="main__input" type="password">
+        <button type="submit"> Отправить</button>
     </form>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

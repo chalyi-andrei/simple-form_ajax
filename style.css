@@ -8,10 +8,10 @@ body {
     padding: 5px 20px 20px 20px;
     border-radius: 10px;
 }
-span,
-input {
+.main__span,
+.main__input {
     display: block;
 }
-input {
+.main__input{
     margin-bottom: 10px;
 }
