@@ -1,9 +1,16 @@
+/* style for content page*/
+.content__header {
+    background-color: #2e6da4;
+
+}
 body {
     background-color: #999;
 }
-.main {
+.main,
+.main2 {
     background-color: #fefefe;
     margin: 0 auto;
+    margin-bottom: 10px;
     width: 400px;
     padding: 5px 20px 20px 20px;
     border-radius: 10px;

@@ -1,21 +1,15 @@
-// $('.main__input').on('click', function (e) {
-//     $this = this;
-//     console.log($this);
-// });
-
+//form ajax
 $('.main__form').on('submit', function (e) {
     var $this = $(this),
         url = $this.data('action'),
         data = $this.serialize();
 
     sendForm(url, data, function () {
-        alert('Письмо отправленно !');
+        $('.main').load('success.html')
         console.log(data);
     });
     return false;
 });
-
-
 
 function sendForm(url, data, callback) {
     $.ajax({
@@ -25,3 +19,20 @@ function sendForm(url, data, callback) {
         complete: callback
     });
 };
+//Програмный вызов event
+// $('.main__button').on('click', function() {
+//     alert('Clic');
+// });
+//
+// $('.main__input').on('input', function() {
+//     $('.main__button').trigger('click');
+// });
+
+
+//load content
+$('.load-btn').on('click', function() {
+    $('.content').load('content.html', function() {
+        console.log('Загрузили контент на сайт');
+    });
+});
+
